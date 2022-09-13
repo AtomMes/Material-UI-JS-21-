@@ -1,22 +1,23 @@
 import "./App.css";
-import { MuiImageList } from "./components/MuiImageList";
- import { MuiAccordion } from "./components/MuiAccordion";
- import { MuiCard } from "./components/MuiCard";
- import { MuiLayout } from "./components/MuiLayout";
- import { MuiAutocomplete } from "./components/MuiAutocomplete";
- import { MuiRating } from "./components/MuiRating";
- import { MuiSwitch } from "./components/MuiSwitch";
- import { MuiCheckbox } from "./components/MuiCheckbox";
- import { MuiRadioButton } from "./components/MuiRadioButton";
- import { MuiButton } from "./components/MuiButton";
- import { MuiTextField } from "./components/MuiTextField";
- import { MuiTypography } from "./components/MuiTypography";
- import { MuiSelect } from "./components/MuiSelect";
+import { MuiNavbar } from './components/MuiNavbar';
+// import { MuiImageList } from "./components/MuiImageList";
+//  import { MuiAccordion } from "./components/MuiAccordion";
+//  import { MuiCard } from "./components/MuiCard";
+//  import { MuiLayout } from "./components/MuiLayout";
+//  import { MuiAutocomplete } from "./components/MuiAutocomplete";
+//  import { MuiRating } from "./components/MuiRating";
+//  import { MuiSwitch } from "./components/MuiSwitch";
+//  import { MuiCheckbox } from "./components/MuiCheckbox";
+//  import { MuiRadioButton } from "./components/MuiRadioButton";
+//  import { MuiButton } from "./components/MuiButton";
+//  import { MuiTextField } from "./components/MuiTextField";
+//  import { MuiTypography } from "./components/MuiTypography";
+//  import { MuiSelect } from "./components/MuiSelect";
 
 function App() {
   return (
     <div className="App">
-      <div className='line' />
+      {/* <div className='line' />
       <MuiTypography />
       <div className='line' />
       <MuiButton /> 
@@ -42,6 +43,8 @@ function App() {
       <MuiAccordion />
       <div className='line' />
       <MuiImageList />
+      <div className='line' /> */}
+      <MuiNavbar />
     </div>
   );
 }
