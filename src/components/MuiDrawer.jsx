@@ -2,7 +2,7 @@ import React from "react";
 import { Drawer, Box, Typography, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 export const MuiDrawer = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = React.useState(true);
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
   return (
     <>
@@ -10,9 +10,9 @@ export const MuiDrawer = () => {
         <MenuIcon />
       </IconButton>
       <Drawer
-        anchor="left"
+        anchor="left"//chjogi inchi hamara
         open={isDrawerOpen}
-        onClose={() => setIsDrawerOpen(false)}
+        onClose={() => setIsDrawerOpen(false)}//erb vor urish tex sxmum es onclosena ashxatum u et jamanak asum es vor setopeny close ani vor pakvi
       >
         <Box p={2} width="250px" textAlign="center" role="presentation">
           <Typography variant="h6" component="div">
