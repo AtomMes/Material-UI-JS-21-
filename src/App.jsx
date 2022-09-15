@@ -1,4 +1,5 @@
 import "./App.css";
+import { createTheme, colors, ThemeProvider } from "@mui/material";
 //import { MuiLoadingButton } from "./components/MuiLoadingButton";
 //import { MuiMasonry } from "./components/MuiMasonry";
 import { MuiResponsiveness } from "./components/MuiResponsiveness";
@@ -36,9 +37,25 @@ import { MuiResponsiveness } from "./components/MuiResponsiveness";
 //  import { MuiTypography } from "./components/MuiTypography";
 //  import { MuiSelect } from "./components/MuiSelect";
 
+const theme = createTheme({
+  status:{
+    danger:'#e53e3e'
+  },
+  palette:{
+    secondary:{
+      main:colors.orange[500]//hima qani vor providerov es poxancel enq sax komponentnerin, secondary-n amen tex es guyna, voch menak main-y ightnela poxvel sra lighty u tenc
+    },
+    neutral:{
+      main:colors.green[500],
+      darker:colors.green[800]
+    }
+  }
+})
+
 function App() {
   return (
-    <div className="App">
+   <ThemeProvider theme={theme} >
+     <div className="App">
       {/* <div className='line' />
       <MuiTypography />
       <div className='line' />
@@ -112,6 +129,7 @@ function App() {
 <div className='line' /> */}
       <MuiResponsiveness />
     </div>
+   </ThemeProvider>
   );
 }
 
