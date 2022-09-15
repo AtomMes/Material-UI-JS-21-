@@ -2,6 +2,7 @@ import "./App.css";
 import { MuiAlert } from "./components/MuiAlert";
 import { MuiDialog } from "./components/MuiDialog";
 import { MuiProgress } from "./components/MuiProgress";
+import { MuiSkeleton } from "./components/MuiSkeleton";
 import { MuiSnackbar } from "./components/MuiSnackbar";
 import { MuiTable } from "./components/MuiTable";
 // import { MuiChip } from "./components/MuiChip";
@@ -88,8 +89,10 @@ function App() {
       <MuiDialog />
       <div className='line' />
       <MuiSnackbar />
-      <div className='line' /> */}
+      <div className='line' />
       <MuiProgress />
+      <div className='line' /> */}
+      <MuiSkeleton />
     </div>
   );
 }
