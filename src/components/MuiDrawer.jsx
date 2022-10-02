@@ -1,18 +1,26 @@
 import React from "react";
-import { Drawer, Box, Typography, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Drawer, Box, Typography, IconButton, Button } from "@mui/material";
+
+const positions = ["top", "right", "bottom", "left"];
+
 export const MuiDrawer = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+  const [position, setPosition] = React.useState("left");
+
+  const handleClick=(props) => {
+    setPosition(props)
+    setIsDrawerOpen(true)
+  }
 
   return (
     <>
-      <IconButton size='large' color='secondary' edge='start' aria-label='logo' onClick={()=> setIsDrawerOpen(true)} >
-        <MenuIcon />
-      </IconButton>
+      {positions.map((text, i) => (
+        <Button key={i} onClick={() => handleClick(text)} >{text}</Button>
+      ))}
       <Drawer
-        anchor="left"//chjogi inchi hamara
+        anchor={position} //poziciana
         open={isDrawerOpen}
-        onClose={() => setIsDrawerOpen(false)}//erb vor urish tex sxmum es onclosena ashxatum u et jamanak asum es vor setopeny close ani vor pakvi
+        onClose={() => setIsDrawerOpen(false)} //erb vor urish tex sxmum es onclosena ashxatum u et jamanak asum es vor setopeny close ani vor pakvi
       >
         <Box p={2} width="250px" textAlign="center" role="presentation">
           <Typography variant="h6" component="div">

@@ -21,7 +21,7 @@ import MuiBackdrop from "./components/MuiBackdrop";
 // import { MuiAvatar } from "./components/MuiAvatar";
 // import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
 // import { MuiSpeedDial } from "./components/MuiSpeedDial";
-//import { MuiDrawer } from "./components/MuiDrawer";
+import { MuiDrawer } from "./components/MuiDrawer";
 // import { MuiBreadCrumbs } from "./components/MuiBreadcrumbs";
 // import { MuiLink } from "./components/MuiLink";
 //import { MuiNavbar } from './components/MuiNavbar';
@@ -91,7 +91,7 @@ function App() {
       <div className='line' />
       <MuiBreadCrumbs />
       <div className='line' />
-      <MuiDrawer />
+      
       <div className='line' />
       <MuiSpeedDial />
       <div className='line' />
@@ -134,6 +134,7 @@ function App() {
 <MuiSlider />
 <div className='line' /> */}
         <MuiBackdrop />
+        <MuiDrawer />
       </div>
     </ThemeProvider>
   );
