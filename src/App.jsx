@@ -2,6 +2,7 @@ import "./App.css";
 import { createTheme, colors, ThemeProvider } from "@mui/material";
 import { MuiResponsiveness } from "./components/MuiResponsiveness";
 import MuiSlider from "./components/MuiSlider";
+import MuiBackdrop from "./components/MuiBackdrop";
 //import { MuiLoadingButton } from "./components/MuiLoadingButton";
 //import { MuiMasonry } from "./components/MuiMasonry";
 //import { MuiTabs } from "./components/MuiTabs";
@@ -132,7 +133,7 @@ function App() {
 <div className='line' /> 
 <MuiSlider />
 <div className='line' /> */}
-
+        <MuiBackdrop />
       </div>
     </ThemeProvider>
   );
