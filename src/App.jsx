@@ -1,8 +1,9 @@
 import "./App.css";
 import { createTheme, colors, ThemeProvider } from "@mui/material";
+import { MuiResponsiveness } from "./components/MuiResponsiveness";
+import MuiSlider from "./components/MuiSlider";
 //import { MuiLoadingButton } from "./components/MuiLoadingButton";
 //import { MuiMasonry } from "./components/MuiMasonry";
-import { MuiResponsiveness } from "./components/MuiResponsiveness";
 //import { MuiTabs } from "./components/MuiTabs";
 //import { MuiTimeline } from "./components/MuiTimeline";
 //import { MuiLoadingButton } from "./components/MuiLoadingButton";
@@ -38,25 +39,25 @@ import { MuiResponsiveness } from "./components/MuiResponsiveness";
 //  import { MuiSelect } from "./components/MuiSelect";
 
 const theme = createTheme({
-  status:{
-    danger:'#e53e3e'
+  status: {
+    danger: "#e53e3e",
   },
-  palette:{
-    secondary:{
-      main:colors.orange[500]//hima qani vor providerov es poxancel enq sax komponentnerin, secondary-n amen tex es guyna, voch menak main-y ightnela poxvel sra lighty u tenc
+  palette: {
+    secondary: {
+      main: colors.orange[500], //hima qani vor providerov es poxancel enq sax komponentnerin, secondary-n amen tex es guyna, voch menak main-y ightnela poxvel sra lighty u tenc
     },
-    neutral:{
-      main:colors.green[500],
-      darker:colors.green[800]
-    }
-  }
-})
+    neutral: {
+      main: colors.green[500],
+      darker: colors.green[800],
+    },
+  },
+});
 
 function App() {
   return (
-   <ThemeProvider theme={theme} >
-     <div className="App">
-      {/* <div className='line' />
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* <div className='line' />
       <MuiTypography />
       <div className='line' />
       <MuiButton /> 
@@ -126,10 +127,14 @@ function App() {
 <MuiTimeline /> 
 <div className='line' /> 
       <MuiMasonry />
+<div className='line' /> 
+<MuiResponsiveness />
+<div className='line' /> 
+<MuiSlider />
 <div className='line' /> */}
-      <MuiResponsiveness />
-    </div>
-   </ThemeProvider>
+
+      </div>
+    </ThemeProvider>
   );
 }
 
