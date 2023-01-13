@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, Box, Typography, IconButton, Button } from "@mui/material";
+import { Drawer, Box, Typography, Button } from "@mui/material";
 
 const positions = ["top", "right", "bottom", "left"];
 

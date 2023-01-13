@@ -8,7 +8,7 @@ export const MuiBottomNavigation = () => {
   const [value, setValue] = React.useState(0);
   return (
     <BottomNavigation
-      sx={{ width: "100%", position: "absolute", bottom: 0 }}
+      sx={{ width: "100%"}}
       value={value}
       onChange={(e, newValue) => {
         setValue(newValue);

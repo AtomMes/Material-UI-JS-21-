@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Link, Typography } from "@mui/material";
+import { Stack, Link } from "@mui/material";
 
 export const MuiLink = () => {
   return (
