@@ -3,41 +3,40 @@ import { createTheme, colors, ThemeProvider } from "@mui/material";
 import { MuiResponsiveness } from "./components/MuiResponsiveness";
 import MuiSlider from "./components/MuiSlider";
 import MuiBackdrop from "./components/MuiBackdrop";
-//import { MuiLoadingButton } from "./components/MuiLoadingButton";
-//import { MuiMasonry } from "./components/MuiMasonry";
-//import { MuiTabs } from "./components/MuiTabs";
-//import { MuiTimeline } from "./components/MuiTimeline";
-//import { MuiLoadingButton } from "./components/MuiLoadingButton";
-// import { MuiAlert } from "./components/MuiAlert";
-// import { MuiDialog } from "./components/MuiDialog";
-// import { MuiProgress } from "./components/MuiProgress";
-// import { MuiSkeleton } from "./components/MuiSkeleton";
-// import { MuiSnackbar } from "./components/MuiSnackbar";
-// import { MuiTable } from "./components/MuiTable";
-// import { MuiChip } from "./components/MuiChip";
-// import { MuiTooltip } from "./components/MuiTooltip";
-// import { MuiBadge } from "./components/MuiBadge";
-// import { MuiList } from "./components/MuiList";
-// import { MuiAvatar } from "./components/MuiAvatar";
-// import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
-// import { MuiSpeedDial } from "./components/MuiSpeedDial";
+import { MuiLoadingButton } from "./components/MuiLoadingButton";
+import { MuiMasonry } from "./components/MuiMasonry";
+import { MuiTabs } from "./components/MuiTabs";
+import { MuiTimeline } from "./components/MuiTimeline";
+import { MuiLoadingButton } from "./components/MuiLoadingButton";
+ import { MuiAlert } from "./components/MuiAlert";
+ import { MuiDialog } from "./components/MuiDialog";
+ import { MuiProgress } from "./components/MuiProgress";
+ import { MuiSkeleton } from "./components/MuiSkeleton";
+ import { MuiSnackbar } from "./components/MuiSnackbar";
+ import { MuiTable } from "./components/MuiTable";
+ import { MuiChip } from "./components/MuiChip";
+ import { MuiTooltip } from "./components/MuiTooltip";
+ import { MuiBadge } from "./components/MuiBadge";
+ import { MuiList } from "./components/MuiList";
+ import { MuiAvatar } from "./components/MuiAvatar";
+ import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
+ import { MuiSpeedDial } from "./components/MuiSpeedDial";
 import { MuiDrawer } from "./components/MuiDrawer";
-// import { MuiBreadCrumbs } from "./components/MuiBreadcrumbs";
-// import { MuiLink } from "./components/MuiLink";
-//import { MuiNavbar } from './components/MuiNavbar';
-// import { MuiImageList } from "./components/MuiImageList";
-//  import { MuiAccordion } from "./components/MuiAccordion";
-//  import { MuiCard } from "./components/MuiCard";
-//  import { MuiLayout } from "./components/MuiLayout";
-//  import { MuiAutocomplete } from "./components/MuiAutocomplete";
-//  import { MuiRating } from "./components/MuiRating";
-//  import { MuiSwitch } from "./components/MuiSwitch";
-//  import { MuiCheckbox } from "./components/MuiCheckbox";
-//  import { MuiRadioButton } from "./components/MuiRadioButton";
-//  import { MuiButton } from "./components/MuiButton";
-//  import { MuiTextField } from "./components/MuiTextField";
-//  import { MuiTypography } from "./components/MuiTypography";
-//  import { MuiSelect } from "./components/MuiSelect";
+ import { MuiBreadCrumbs } from "./components/MuiBreadcrumbs";
+ import { MuiLink } from "./components/MuiLink";
+import { MuiNavbar } from './components/MuiNavbar';
+ import { MuiImageList } from "./components/MuiImageList";
+  import { MuiAccordion } from "./components/MuiAccordion";
+  import { MuiCard } from "./components/MuiCard";
+  import { MuiLayout } from "./components/MuiLayout";
+  import { MuiAutocomplete } from "./components/MuiAutocomplete";
+  import { MuiRating } from "./components/MuiRating";  import { MuiSwitch } from "./components/MuiSwitch";
+  import { MuiCheckbox } from "./components/MuiCheckbox";
+  import { MuiRadioButton } from "./components/MuiRadioButton";
+  import { MuiButton } from "./components/MuiButton";
+ import { MuiTextField } from "./components/MuiTextField";
+  import { MuiTypography } from "./components/MuiTypography";
+ import { MuiSelect } from "./components/MuiSelect";
 
 const theme = createTheme({
   status: {
@@ -58,7 +57,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        {/* <div className='line' />
+         <div className='line' />
       <MuiTypography />
       <div className='line' />
       <MuiButton /> 
@@ -132,7 +131,7 @@ function App() {
 <MuiResponsiveness />
 <div className='line' /> 
 <MuiSlider />
-<div className='line' /> */}
+<div className='line' /> 
         <MuiBackdrop />
         <MuiDrawer />
       </div>
